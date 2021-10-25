@@ -28,10 +28,12 @@ function App() {
   return (
     <div className="App">
       {data.launches.map((launch) => (
-        <div>
-          <p>{launch.rocket.rocket_name}</p>
-          <p>{launch.details ? launch.details : "No details for this launch"}</p>
-        </div>
+        <li>{launch.launch_date_utc}</li>
+        // <div>
+        //   <h2>{launch.rocket.rocket_name}</h2>
+        //   <p>{launch.launch_success === true ? "Success" : "CRASH"}</p>
+        //   <p>{launch.details ? launch.details : "No details for this launch"}</p>
+        // </div>
       ))}
     </div>
   );
